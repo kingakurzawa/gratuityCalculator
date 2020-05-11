@@ -17,12 +17,13 @@ body {
     background-repeat: no-repeat;
     font-family: 'Special Elite', cursive;
 }
-.header {
-    margin: 20px;
-}
+
 h1 {
     color: #34671c;
     font-size: 35px;
+    margin-bottom: 10px;
+}
+.header{
     margin-bottom: 10px;
 }
 .shadow {
@@ -40,7 +41,7 @@ h1 {
     background-color: rgba(255, 255, 255, 0.728);
     box-shadow: 0 0 10px #000;
     border-radius: 20px;
-    padding: 15px 30px;
+    padding: 10px 30px;
 }
 
 .bottom {
@@ -133,10 +134,7 @@ select {
 }
 @media(min-width:1020px) {
     .calc {
-        width: 20%;
-    }
-    .header{
-        margin-top: 150px;
+        width: 25%;
     }
     .wrapper {
         width: 50%;
