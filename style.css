@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("./img/rest.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Special Elite', cursive;
+}
+.header {
+    margin: 20px;
+}
+h1 {
+    color: #34671c;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.shadow {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.516);
+}
+.wrapper {
+    width: 80%;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.728);
+    box-shadow: 0 0 10px #000;
+    border-radius: 20px;
+    padding: 15px 30px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+label {
+    display: block;
+    width: 100%;
+    margin: 15px 0 5px 0;
+}
+.calc, .error, .info {
+    margin: 10px 0;
+}
+input {
+    text-align: center;
+    font-size: 18px;
+    width: 70px;
+    height: 50px;
+    border-radius: 100px;
+    border: 1px solid rgb(185, 185, 185);
+    cursor: pointer;
+
+}
+select {
+    width: 80%;
+    font-size: 15px;
+}
+.calc {
+    display: block;
+    margin: 20px 0;
+    align-self: flex-end;
+    padding: 15px 5px;
+    width: 50%;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bolder;
+    background: #34671c;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background .5s;
+}
+.calc:hover {
+    background: #214112;
+}
+.info {
+    display: none;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+}
+.amount {
+    color: #34671c;
+    font-weight: bold;
+}
+.error {
+    font-size: 15px;
+    text-align: center;
+    color: #a62b2b;
+}
+
+@media(min-width:760px) {
+    body {
+        justify-content: start;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    p, label {
+        font-size: 20px;
+    }
+    label {
+        margin-top: 40px;
+    }
+    select {
+        width: 20%;
+        font-size: 15px;
+    }
+    .wrapper {
+        margin-top: 100px;
+        padding: 30px 50px;
+    }
+    .calc {
+        width: 30%;
+    }
+    .header{
+        margin-top: 100px;
+    }
+}
+@media(min-width:1020px) {
+    .calc {
+        width: 20%;
+    }
+    .header{
+        margin-top: 150px;
+    }
+    .wrapper {
+        width: 50%;
+        margin-top: 50px;
+    }
+}

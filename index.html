@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Gratuity Calculator
+    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="shadow"></div>
+    <div class="header">
+        <h1>Share Bill</h1>
+        <p>Split the gratuity between people</p>
+    </div>
+    <div class="wrapper">
+        <div class="bottom">
+            <label for="currency">Choose currency</label>
+            <select id="currency">
+                <option value="" disabled selected></option>
+                <option value="zł">zł</option>
+                <option value="€">€</option>
+                <option value="$">$</option>
+                <option value="£">£</option>
+                <option value="kč">kč</option>
+            </select>
+            <label for="price">
+                Amount to pay
+            </label>
+            <input type="number" id="price"/>
+
+            <label for="persons">
+                Quantity of people
+            </label>
+            <input type="number" id="persons"/>
+
+            <label for="gratuity">Gratuity:</label>
+            <select id="gratuity">
+                <option value="0" disabled selected>- choose gratuity -</option>
+                <option value="0.05">5%</option>
+                <option value="0.1">10%</option>
+                <option value="0.15">15%</option>
+            </select>
+            <button class="calc">Calculate</button>
+            <p class="error"></p>
+            <p class="info"><span class="amount"></span><span class="currency"></span>&nbsp per person</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
